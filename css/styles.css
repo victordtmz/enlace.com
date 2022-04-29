@@ -6,7 +6,12 @@
 #ffe66d - yellow
 #a1c6d7 - blue light
 */
-
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
 *{
   margin: 0;
   padding: 0;
@@ -21,13 +26,21 @@ h1, h2, h3, h4, h5, h6  {
   /* font-family: 'Libre Franklin', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   
+  
   font-size: 1.5rem;
 }
 h1, h2{
   font-family: 'Caveat', cursive;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: center;
+  
+
+  /* font-family: 'Work Sans', sans-serif; */
 }
 h1{
   font-size: 3rem;
+  /* padding-top: 50px; */
 }
 h2{
   font-size: 2rem;
@@ -132,8 +145,10 @@ a:hover{
   text-decoration: none;
 }
 .content_wrap{
-  width: 1000px;
+  max-width: 850px;
+  width: 98%;
   margin: 0 auto;
+  padding: 50px 2%;
 }
 /*Buttons
 ---------------------------------------------------------*/
@@ -221,6 +236,34 @@ button.quote:hover{
 .descripcion{
   background: #a1c6d7;
 }
+
+.subSection{
+  background: #ffe66d;
+  margin: 20px 0;
+  padding: 20px;
+
+  /* background-color: #a3a3a3; */
+}
+.subSection p{
+  margin: .5rem auto;
+}
+.costo{
+  text-align: center;
+}
+.costo h1{
+  margin: 0;
+}
+.subSection ul{
+  /* padding-left: 25px; */
+  padding: 15px 5px 15px 50px ;
+}
+
+.subSection li{
+  list-style-type: disc;
+}
+
+
+
 /*Tramite
 ---------------------------------------------------------*/
 .tramite{
